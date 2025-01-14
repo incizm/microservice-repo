@@ -9,7 +9,7 @@ phases:
     commands:
       - echo Building Docker image...
       - docker build -t microservice:latest .
-      - docker tag microservice:latest 243394592645.dkr.ecr.ap-southeast-1.amazonaws.com/assessment-test
+      - docker tag microservice:latest 243394592645.dkr.ecr.ap-southeast-1.amazonaws.com/assessment-test:latest
   post_build:
     commands:
       - echo Pushing Docker image to ECR...
